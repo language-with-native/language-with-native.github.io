@@ -58,7 +58,8 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center">
-                                <img
+                                <h1 className='text-midnightblue text-1xl sm:text-2xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0'>Language With Native</h1>
+                                {/* <img
                                     className="block h-12 w-40 lg:hidden"
                                     src={'/assets/logo/logo.svg'}
                                     alt="dsign-logo"
@@ -67,7 +68,7 @@ const Navbar = () => {
                                     className="hidden h-full w-full lg:block"
                                     src={'/assets/logo/logo.svg'}
                                     alt="dsign-logo"
-                                />
+                                /> */}
                             </div>
 
                             {/* LINKS */}
@@ -97,12 +98,12 @@ const Navbar = () => {
 
                         {/* SIGNIN DIALOG */}
 
-                        <Signdialog />
+                        {/* <Signdialog /> */}
 
 
                         {/* REGISTER DIALOG */}
 
-                        <Registerdialog />
+                        {/* <Registerdialog /> */}
 
 
                         {/* DRAWER FOR MOBILE VIEW */}
