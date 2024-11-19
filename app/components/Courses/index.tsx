@@ -22,63 +22,64 @@ const postData: DataType[] = [
     {
         heading: 'Russian language for begginers',
         heading2: 'Russian',
-        name: "Anna Pavlenko",
-        imgSrc: '/assets/courses/courseone.png',
+        name: "Ideal for those just starting their journey in Russian. Covers basic vocabulary, essential grammar, and foundational conversation skills.",
+        imgSrc: '/assets/courses/two.jpeg',
         students: 10,
+        classes: 12,
+        price: 20,
+        rating: 4.9,
+    },
+    {
+        heading: 'Conversational Russian',
+        heading2: 'Ukrainian',
+        name: "Focuses on practical, everyday conversation. Learn to communicate naturally and confidently in various social and professional contexts.",
+        imgSrc: '/assets/courses/three.jpeg',
+        students: 130,
         classes: 12,
         price: 20,
         rating: 5,
     },
     {
-        heading: 'Ukrainian language for begginers',
-        heading2: 'Ukrainian',
-        name: "Anna Pavlenko",
-        imgSrc: '/assets/courses/coursetwo.png',
-        students: 130,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'Dating in Russian',
+        heading: 'Russian for Travelers',
         heading2: 'Russian/Culture',
-        name: "Anna Pavlenko",
-        imgSrc: '/assets/courses/coursethree.png',
+        name: 'Perfect for those planning a trip to a Russian-speaking country. Learn essential phrases, directions, and cultural tips to navigate with ease.',
+        imgSrc: '/assets/courses/one.jpeg',
         students: 120,
         classes: 12,
         price: 20,
-        rating: 4.2,
+        rating: 4.8,
     },
     {
-        heading: 'We Launch Delia',
+        heading: 'Beginner Ukrainian Course',
         heading2: 'Webflow this Week!',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/courseone.png',
+        name: 'Perfect for newcomers to Ukrainian. Covers fundamental vocabulary, essential grammar, and basic conversation skills to get you started.',
+        imgSrc: '/assets/courses/four.jpg',
         students: 150,
         classes: 12,
         price: 20,
-        rating: 4.7,
+        rating: 5,
     },
     {
-        heading: 'We Launch Delia',
+        heading: 'Conversational Ukrainian',
         heading2: 'Webflow this Week!',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursetwo.png',
+        name: 'Focuses on practical, everyday communication. Learn to engage in natural conversations in various social and professional settings.',
+        imgSrc: '/assets/courses/six.jpg',
         students: 150,
         classes: 12,
         price: 20,
-        rating: 4.7,
+        rating: 5,
     },
     {
-        heading: 'We Launch Delia',
+        heading: 'Speaking club',
         heading2: 'Webflow this Week!',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursethree.png',
+        name: 'Practice your Russian or Ukrainian in small, friendly groups!',
+        imgSrc: '/assets/courses/five.jpg',
         students: 150,
         classes: 12,
         price: 20,
-        rating: 4.7,
+        rating: 5,
     },
+
 ]
 
 // CAROUSEL SETTINGS
@@ -88,7 +89,7 @@ export default class MultipleItems extends Component {
 
     render() {
         const settings = {
-            dots: false,
+            dots: true,
             infinite: true,
             slidesToShow: 3,
             // centerMode: true,
@@ -144,7 +145,7 @@ export default class MultipleItems extends Component {
 
                                     <div className="px-3">
                                         <h4 className='text-2xl font-bold pt-6 text-black'>{items.heading}</h4>
-                                        <h4 className='text-2xl font-bold pt-1 text-black'>{items.heading2}</h4>
+                                        {/* <h4 className='text-sm pt-1 text-black'>{items.heading2}</h4> */}
 
                                         <div>
                                             <h3 className='text-base font-normal pt-6 opacity-75'>{items.name}</h3>
@@ -168,7 +169,7 @@ export default class MultipleItems extends Component {
 
                                         <hr style={{ color: "#C4C4C4" }} />
 
-                                        <div className="flex justify-between pt-6">
+                                        {/* <div className="flex justify-between pt-6">
                                             <div className="flex gap-4">
                                                 <Image src={'/assets/courses/book-open.svg'} alt="users" width={24} height={24} className="inline-block m-auto" />
                                                 <h3 className="text-base font-medium text-black opacity-75">{items.classes} classes</h3>
@@ -177,7 +178,7 @@ export default class MultipleItems extends Component {
                                                 <Image src={'/assets/courses/users.svg'} alt="users" width={24} height={24} className="inline-block m-auto" />
                                                 <h3 className="text-base font-medium text-black opacity-75">{items.students} students</h3>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

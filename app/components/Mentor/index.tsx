@@ -13,14 +13,14 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'Native speaker of Russian and Ukrainian',
+        profession: 'As a native speaker of both Russian and Ukrainian, I am passionate about helping my students achieve fluency and confidence in these beautiful languages. My lessons focus on conversational practice, ensuring you not only learn the language but also feel comfortable using it in real-life situations. My goal is to help you break through language barriers and speak Russian or Ukrainian freely and naturally. Every session is tailored to your individual needs and interests, making your learning experience engaging, effective, and personal. With a flexible and student-centered approach, I’m here to guide you on your journey to mastering Russian or Ukrainian. Together, we’ll make your language goals a reality!',
         name: 'Anna Pavlenko',
-        imgSrc: '/assets/mentor/user2.png',
+        imgSrc: '/assets/mentor/anna.png',
     },
     // {
     //     profession: 'Senior UX Designer',
     //     name: 'Shoo Thar Mien',
-    //     imgSrc: '/assets/mentor/user2.png',
+    //     imgSrc: '/assets/mentor/anna.jpg',
     // },
     // {
     //     profession: 'Senior UX Designer',
@@ -122,14 +122,14 @@ export default class MultipleItems extends Component {
             <div className="py-10 sm:py-24 bg-paleblue" id="mentor">
 
                 <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 px-4 lg:px-8 relative'>
-                    <h2 className="lh-82 text-midnightblue text-4xl md:text-55xl text-center md:text-start font-semibold">Meet with our <br /> mentor.</h2>
+                    <h2 className="lh-82 text-midnightblue text-4xl md:text-55xl text-center md:text-start font-semibold">Meet with your mentor</h2>
 
                     <Slider {...settings}>
                         {postData.map((items, i) => (
                             <div key={i}>
                                 <div className='m-3 py-14 md:my-10 text-center'>
                                     <div className="relative">
-                                        <Image src={items.imgSrc} alt="user-image" width={306} height={0} className="inline-block m-auto" />
+                                        <Image src={items.imgSrc} alt="user-image" width={306} height={0} max-width={306} max-height={100}className="inline-block m-auto" />
                                         {/* <div className="absolute right-[84px] bottom-[102px] bg-white rounded-full p-4">
                                             <Image src={'/assets/mentor/linkedin.svg'} alt="linkedin-image" width={25} height={24} />
                                         </div> */}
@@ -138,6 +138,13 @@ export default class MultipleItems extends Component {
                                         <h3 className='text-2xl font-semibold text-lightblack'>{items.name}</h3>
                                         <h4 className='text-lg font-normal text-lightblack pt-2 opacity-50'>{items.profession}</h4>
                                     </div>
+                                    {/* <div>
+                                        <h4>As a native speaker of both Russian and Ukrainian, I am passionate about helping my students achieve fluency and confidence in these beautiful languages. My lessons focus on conversational practice, ensuring you not only learn the language but also feel comfortable using it in real-life situations.
+
+My goal is to help you break through language barriers and speak Russian or Ukrainian freely and naturally. Every session is tailored to your individual needs and interests, making your learning experience engaging, effective, and personal.
+
+With a flexible and student-centered approach, I’m here to guide you on your journey to mastering Russian or Ukrainian. Together, we’ll make your language goals a reality!</h4>
+                                    </div> */}
                                 </div>
                             </div>
                         ))}

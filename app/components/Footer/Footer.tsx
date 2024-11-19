@@ -33,22 +33,22 @@ const socialLinks: socialLinks[] = [
 ]
 
 const products: ProductType[] = [
-    {
-        id: 1,
-        section: "Company",
-        link: ['About', 'Careers', 'Mobile', 'Blog', 'How we work?'],
-    },
-    {
-        id: 2,
-        section: "Contact",
-        link: ['Help/FAQ', 'Press', 'Affiliates', 'Hotel owners', 'Partners']
-    }
-    ,
-    {
-        id: 3,
-        section: "More",
-        link: ['Airline fees', 'Airlines', 'Low fare tips', 'Badges &', 'Certificates']
-    }
+    // {
+    //     id: 1,
+    //     section: "Company",
+    //     link: ['About', 'Careers', 'Mobile', 'Blog', 'How we work?'],
+    // },
+    // {
+    //     id: 2,
+    //     section: "Contact",
+    //     link: ['Help/FAQ', 'Press', 'Affiliates', 'Hotel owners', 'Partners']
+    // }
+    // ,
+    // {
+    //     id: 3,
+    //     section: "More",
+    //     link: ['Airline fees', 'Airlines', 'Low fare tips', 'Badges &', 'Certificates']
+    // }
 ]
 
 const footer = () => {

@@ -15,41 +15,23 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Robert Douny",
+        profession: 'Developer',
+        comment: 'Perfect for Beginners. I started as a complete beginner, and this course has been exactly what I needed. The teacher is patient and explains everything clearly. I love how practical the lessons are – I’m already having basic conversations',
         imgSrc: '/assets/testimonial/user.svg',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Zara Swatchovski",
+        profession: 'Dog sitter',
+        comment: 'An Immersive Experience. Learning Ukrainian with a native speaker has been an incredible experience. The lessons are interactive and culturally rich, which makes each session not only educational but also enjoyable. I feel much more confident speaking and understanding Ukrainian now.',
         imgSrc: '/assets/mentor/user2.png',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Josse Figman",
+        profession: 'Manager',
+        comment: 'A Fantastic Speaking Experience. The Russian Speaking Club has been an amazing way to improve my conversational skills. The small group setting made it easy to participate, and the native-speaking mentor provided helpful corrections and tips without making it feel intimidating. Each session focused on interesting topics, which kept the discussions lively and engaging.',
         imgSrc: '/assets/mentor/user3.png',
-    },
-    {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user1.png',
-    },
-    {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user2.png',
-    },
-    {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user3.png',
-    },
+    }
 ]
 
 // CAROUSEL SETTINGS
@@ -123,7 +105,7 @@ export default class MultipleItems extends Component {
                                             <StarIcon width={20} className="text-gold" />
                                             <StarIcon width={20} className="text-gold" />
                                             <StarIcon width={20} className="text-gold" />
-                                            <StarIcon width={20} className="text-lightgray" />
+                                            <StarIcon width={20} className="text-gold" />
                                         </div>
                                     </div>
                                 </div>

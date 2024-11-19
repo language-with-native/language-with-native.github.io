@@ -13,8 +13,8 @@ const Banner = () => {
                             <Image src="/assets/banner/check.svg" alt="check-image" width={20} height={20} />
                             <h3 className='text-kellygreen text-sm font-semibold text-center lg:text-start'>Get 30% off on first enroll</h3>
                         </div>
-                        <h1 className='text-midnightblue text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0'>Advance your Russian or Ukrainian speaking skills with us.</h1>
-                        <h3 className='text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-0'>Learn Russian and Ukrainian with Us – Open Doors to Culture, Connection, and Communication!</h3>
+                        <h1 className='text-midnightblue text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0'>Unlock the Magic of Russian and Ukrainian – Learn with a Native, Speak Like a Local.</h1>
+                        <h3 className='text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-0'>Experience the beauty and depth of Russian and Ukrainian languages through personalized lessons with a native speaker.</h3>
 
                         {/* <div className="relative text-white focus-within:text-white flex flex-row-reverse input-shadow rounded-full pt-5 lg:pt-0">
                             <input type="Email address" name="q" className="py-6 lg:py-8 text-lg w-full text-black opacity-75 rounded-full pl-8 focus:outline-none focus:text-black" placeholder="search courses..." autoComplete="off" />
@@ -27,9 +27,11 @@ const Banner = () => {
 
                         <div className="relative text-black focus-within:text-white flex flex-row-reverse pt-5 lg:pt-0">
                           <h3>
-                            <p>some details will be here. </p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                            </h3>
+                            
+                            This is more than just language learning; it's an immersive journey into the heart of these cultures. With a focus on real-world conversations, local expressions, and cultural nuances, you'll gain the confidence to speak naturally and authentically.
+
+Our lessons are tailored to your goals and pace, whether you're a beginner or looking to refine your skills. Step beyond textbooks and engage with the language as it's spoken by locals. Together, we'll build your fluency, helping you sound not just accurate, but also effortlessly native.
+Start your journey today and feel the magic of speaking Russian and Ukrainian with the ease and warmth of a true insider!</h3>
                         </div>
 
                         <div className='flex items-center justify-between pt-10 lg:pt-4'>
