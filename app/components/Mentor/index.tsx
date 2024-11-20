@@ -2,6 +2,7 @@
 import Slider from "react-slick";
 import React, { Component } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // CAROUSEL DATA
 
@@ -42,6 +43,27 @@ const postData: DataType[] = [
     //     name: 'Shoo Thar Mien',
     //     imgSrc: '/assets/mentor/user1.png',
     // },
+]
+
+
+interface socialLinks {
+    imgSrc: string;
+    link: string;
+    width: number;
+}
+
+const socialLinks: socialLinks[] = [
+    {
+        imgSrc: '/assets/footer/whatsapp.svg',
+        link: 'https://wa.me/+380/?text=Thanks+for+registering!',
+        width: 14
+    },
+    {
+        imgSrc: '/assets/footer/telegram.svg',
+        link: 'https://t.me/annetik_p',
+        width: 14
+    },
+
 ]
 
 // CAROUSEL SETTINGS
@@ -87,33 +109,33 @@ export default class MultipleItems extends Component {
             autoplaySpeed: 4500,
             cssEase: "linear",
             responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                },
-                {
-                    breakpoint: 1000,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                },
-                {
-                    breakpoint: 530,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                }
+                // {
+                //     breakpoint: 1200,
+                //     settings: {
+                //         slidesToShow: 3,
+                //         slidesToScroll: 1,
+                //         infinite: true,
+                //         dots: false
+                //     }
+                // },
+                // {
+                //     breakpoint: 1000,
+                //     settings: {
+                //         slidesToShow: 2,
+                //         slidesToScroll: 1,
+                //         infinite: true,
+                //         dots: false
+                //     }
+                // },
+                // {
+                //     breakpoint: 530,
+                //     settings: {
+                //         slidesToShow: 1,
+                //         slidesToScroll: 1,
+                //         infinite: true,
+                //         dots: false
+                //     }
+                // }
             ]
         };
 
@@ -137,6 +159,28 @@ export default class MultipleItems extends Component {
                                     <div className="-mt-10">
                                         <h3 className='text-2xl font-semibold text-lightblack'>{items.name}</h3>
                                         <h4 className='text-lg font-normal text-lightblack pt-2 opacity-50'>{items.profession}</h4>
+                                    
+                                        <h3 className='text-lg font-semibold text-gunmetalgray pt-5 lh-160 mt-5 mb-4 lg:mb-16'>Contact Anna to book a trial lesson
+
+                                            
+                                        </h3>
+
+                         
+                                            <div className='flex gap-4 center-element'>
+
+                                                {socialLinks.map((items, i) => (
+                                                <Link href={items.link} key={i}>
+                                                    <div className="bg-white h-12 w-12 shadow-xl text-base rounded-full flex items-center justify-center footer-icons hover:bg-ultramarine">
+                                                        <Image src={items.imgSrc} alt={items.imgSrc} width={items.width} height={2} className="sepiaa" />
+                                                    </div>
+                                                </Link>
+                                                ))}
+
+                                            </div>
+
+                                   
+
+
                                     </div>
                                     {/* <div>
                                         <h4>As a native speaker of both Russian and Ukrainian, I am passionate about helping my students achieve fluency and confidence in these beautiful languages. My lessons focus on conversational practice, ensuring you not only learn the language but also feel comfortable using it in real-life situations.
@@ -145,6 +189,9 @@ My goal is to help you break through language barriers and speak Russian or Ukra
 
 With a flexible and student-centered approach, I’m here to guide you on your journey to mastering Russian or Ukrainian. Together, we’ll make your language goals a reality!</h4>
                                     </div> */}
+
+
+
                                 </div>
                             </div>
                         ))}

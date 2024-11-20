@@ -173,3 +173,9 @@ hr {
     background-size: cover;
     border-radius: 20px;
 }
+
+.center-element{
+    margin-top: -10px;
+    left: calc(50% - 50px);;
+    position: relative;
+}

@@ -76,7 +76,7 @@ const postData: DataType[] = [
         imgSrc: '/assets/courses/five.jpg',
         students: 150,
         classes: 12,
-        price: 20,
+        price: 10,
         rating: 5,
     },
 
