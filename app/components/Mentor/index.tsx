@@ -55,12 +55,12 @@ interface socialLinks {
 const socialLinks: socialLinks[] = [
     {
         imgSrc: '/assets/footer/whatsapp.svg',
-        link: 'https://wa.me/+380/?text=Thanks+for+registering!',
+        link: 'https://wa.me/+31616725940/?text=Thanks+for+registering!',
         width: 14
     },
     {
         imgSrc: '/assets/footer/telegram.svg',
-        link: 'https://t.me/annetik_p',
+        link: 'https://t.me/anna_speaklan',
         width: 14
     },
 
