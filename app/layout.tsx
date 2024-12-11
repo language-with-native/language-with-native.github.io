@@ -1,7 +1,7 @@
 import './globals.css';
 import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/Footer';
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
   title: 'eLearning',
@@ -20,6 +20,7 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="AW-16787315844" />
     </html>
   )
 }
