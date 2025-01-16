@@ -12,11 +12,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-env:
-  # Setting an environment variable with the value of a configuration variable
-  GOOGLE_CLIENT_EMAIL: ${{ vars.GOOGLE_CLIENT_EMAIL }}
-  GOOGLE_PRIVATE_KEY: ${{ vars.GOOGLE_PRIVATE_KEY }}
-
   # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -54,7 +49,7 @@ jobs:
             exit 1
           fi
       - name: Print name
-        run: echo "variable google ${{ vars.GOOGLE_CLIENT_EMAIL }}"
+        run: echo "variable google client email ${{ vars.GOOGLE_CLIENT_EMAIL }} ."
         env:
           BUILD: 'We are currently running the Build job'
       - name: Setup Node
