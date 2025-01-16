@@ -14,10 +14,10 @@ export default async function handler(
 ) {
     console.log('CLIENT_EMAIL:', process.env.GOOGLE_CLIENT_EMAIL)
     console.log('Method:', req.method)
-    
-    if (req.method !== 'POST') {
-        return res.status(405).send({ message: 'Only POST requests allowed' })
-    }
+
+    // if (req.method !== 'POST') {
+    //     return res.status(405).send({ message: 'Only POST requests allowed' })
+    // }
 
     const body = req.body as SheetForm
 

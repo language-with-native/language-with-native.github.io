@@ -18,8 +18,8 @@ const Subscribe: NextPage = () => {
             message
         }
 
-        const rawResponse = await fetch('/api/submit', {
-            method: 'POST',
+        const rawResponse = await fetch(`/api/submit?name=${name}`, {
+            method: 'GET',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
