@@ -53,6 +53,10 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+      - name: Print name
+        run: echo "variable google ${{ vars.GOOGLE_CLIENT_EMAIL }}"
+        env:
+          BUILD: 'We are currently running the Build job'
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
