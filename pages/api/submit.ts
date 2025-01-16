@@ -12,6 +12,9 @@ export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse
 ) {
+    console.log('CLIENT_EMAIL:', process.env.GOOGLE_CLIENT_EMAIL)
+    console.log('Method:', req.method)
+    
     if (req.method !== 'POST') {
         return res.status(405).send({ message: 'Only POST requests allowed' })
     }
@@ -19,7 +22,6 @@ export default async function handler(
     const body = req.body as SheetForm
 
     try {
-        console.log('CLIENT_EMAIL:', process.env.GOOGLE_CLIENT_EMAIL)
 
         const auth = new google.auth.GoogleAuth({
             credentials: {
