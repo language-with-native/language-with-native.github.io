@@ -49,10 +49,6 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
-      - name: Print name
-        run: echo " ENV VARIABLE ID $ID." && echo "variable google client email ${{secrets.GOOGLE_CLIENT_EMAIL}} ."
-        env:
-          BUILD: 'We are currently running the Build job'
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -83,10 +79,12 @@ jobs:
         env:
           GOOGLE_CLIENT_EMAIL: ${{vars.GOOGLE_CLIENT_EMAIL}}
           GOOGLE_PRIVATE_KEY: ${{vars.GOOGLE_PRIVATE_KEY}}
-      - name: Set Secrets and Change Dir
-        run: | # Secrets needed on the server
-            echo "GOOGLE_CLIENT_EMAIL=${{vars.GOOGLE_CLIENT_ID}}" >> .env.production
-            echo "GOOGLE_PRIVATE_KEY=${{vars.GOOGLE_CLIENT_SECRET}}" >> .env.production
+      - name: 'Create env file'
+        run: |
+            touch .env
+            echo GOOGLE_CLIENT_EMAIL=${{vars.GOOGLE_CLIENT_EMAIL}} >> .env
+            echo GOOGLE_PRIVATE_KEY=${{vars.GOOGLE_PRIVATE_KEY}} >> .env
+            cat .env
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
