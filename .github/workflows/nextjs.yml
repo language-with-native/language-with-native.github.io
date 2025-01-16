@@ -79,7 +79,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: echo ${{ vars.GOOGLE_CLIENT_EMAIL }} && ${{ steps.detect-package-manager.outputs.runner }} next build
         env:
           GOOGLE_CLIENT_EMAIL: ${{ vars.GOOGLE_CLIENT_EMAIL }}
           GOOGLE_PRIVATE_KEY: ${{ vars.GOOGLE_PRIVATE_KEY }}
