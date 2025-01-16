@@ -12,8 +12,15 @@ export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse
 ) {
+
+    console.log('get request')
+    const { name, email } = req.query;
+
+    console.log(name)
+
     console.log('CLIENT_EMAIL:', process.env.GOOGLE_CLIENT_EMAIL)
     console.log('Method:', req.method)
+    console.log({req})
 
     // if (req.method !== 'POST') {
     //     return res.status(405).send({ message: 'Only POST requests allowed' })
@@ -46,7 +53,7 @@ export default async function handler(
             valueInputOption: 'USER_ENTERED',
             requestBody: {
                 values: [
-                    [body.name, body.email, body.phone, body.message]
+                    [name, body.email, body.phone, body.message]
                 ]
             }
         });

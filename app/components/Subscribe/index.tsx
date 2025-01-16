@@ -24,7 +24,7 @@ const Subscribe: NextPage = () => {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(form)
+            //body: JSON.stringify(form)
         });
         const content = await rawResponse.json();
 
