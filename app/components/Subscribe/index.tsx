@@ -42,6 +42,10 @@ const Subscribe: NextPage = () => {
         <main className="bg-gray-100 min-h-screen">
             <div className="max-w-5xl mx-auto py-16">
                 <form className="py-4 space-y-4" onSubmit={handleSubmit}>
+
+                    <div className="flex items-center justify-center">  
+                        <h2>Send us request to book a lesson</h2>
+                    </div>
                     <div className="flex items-center justify-center">
                         <label htmlFor="name" className="sr-only">Name</label>
                         <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Name" />
@@ -59,7 +63,7 @@ const Subscribe: NextPage = () => {
                         <textarea value={message} onChange={e => setMessage(e.target.value)} id="message" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Message" />
                     </div>
                     <div className="flex items-center justify-center">
-                        <button type="submit" className="flex items-center justify-center text-sm w-64 rounded-md shadow py-3 px-2 text-blue bg-indigo-600">Submit</button>
+                        <button type="submit" className="flex items-center justify-center text-lg w-64 rounded-md shadow py-3 px-2 text-blue bg-indigo-600">Request a lesson</button>
                     </div>
                 </form>
             </div>
