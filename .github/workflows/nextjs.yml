@@ -82,6 +82,11 @@ jobs:
         env:
           GOOGLE_CLIENT_EMAIL: ${{vars.GOOGLE_CLIENT_EMAIL}}
           GOOGLE_PRIVATE_KEY: ${{vars.GOOGLE_PRIVATE_KEY}}
+      - name: Set Secrets and Change Dir
+        run: | # Secrets needed on the server
+            echo "GOOGLE_CLIENT_EMAIL=${{vars.GOOGLE_CLIENT_ID}}" >> .env.production
+            echo "GOOGLE_PRIVATE_KEY=${{vars.GOOGLE_CLIENT_SECRET}}" >> .env.production
+            cd /home/mumumu/actions-runner/_work/production/production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
