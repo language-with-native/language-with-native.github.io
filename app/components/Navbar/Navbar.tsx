@@ -6,6 +6,7 @@ import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Signdialog from "./Signdialog";
 import Registerdialog from "./Registerdialog";
+import { redirect } from 'next/navigation';
 
 interface NavigationItem {
     name: string;
@@ -14,11 +15,11 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'Home', href: '#/', current: true },
-    { name: 'Courses', href: '#courses', current: false },
-    { name: 'Mentor', href: '#mentor', current: false },
-    { name: 'Group', href: '/', current: false },
-    { name: 'Testimonial', href: '#testimonial', current: false },
+    { name: 'Home', href: '/', current: true },
+    { name: 'Courses', href: '/#courses', current: false },
+    { name: 'Mentor', href: '/#mentor', current: false },
+    { name: 'Testimonial', href: '/#testimonial', current: false },
+    { name: 'Subscribe', href: '/subscribe', current: false}
 ];
 
 function classNames(...classes: string[]) {

@@ -179,3 +179,13 @@ hr {
     left: calc(50% - 50px);;
     position: relative;
 }
+
+.bg-color-yellow 
+{
+    background-color: #ffffe0;
+}
+
+.bg-color-blue
+{
+    background-color: #e0eeff;
+}
