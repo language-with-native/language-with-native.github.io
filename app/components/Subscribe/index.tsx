@@ -20,13 +20,13 @@ const Subscribe: NextPage = () => {
       As global interconnectedness grows, proficiency in Slavic languages offers a competitive edge in fields like international business, diplomacy, technology, and cultural exchange. Russian, a widely spoken language across Eurasia, serves as a gateway to influential markets and strategic partnerships.
     </h3>
     <h3 className='m-3'>
-          Don’t wait—click ‘Enroll to a course’ now and start your journey to success!
+          Don’t wait—click ‘Enroll to a lesson now and start your journey to success!
     </h3>
                    
                         <div className="flex items-center justify-center mt-3">
                             <button type="submit" className="flex items-center justify-center text-lg w-64 rounded-md shadow py-3 px-4 text-blue bg-indigo-600 bg-color-blue" 
                             onClick={()=>redirect('/subscribe')}
-                            >Enroll to a course</button>
+                            >Enroll to a lesson</button>
                         </div>
           
                 </div>
