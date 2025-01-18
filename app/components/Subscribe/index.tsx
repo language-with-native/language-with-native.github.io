@@ -16,9 +16,7 @@ const Subscribe: NextPage = () => {
     <h3 className='m-3'>
        This lesson is your chance to gain valuable skills and insights that can make a real difference. 
     </h3>
-    <h3 className='m-3'>
-      As global interconnectedness grows, proficiency in Slavic languages offers a competitive edge in fields like international business, diplomacy, technology, and cultural exchange. Russian, a widely spoken language across Eurasia, serves as a gateway to influential markets and strategic partnerships.
-    </h3>
+
     <h3 className='m-3'>
           Don’t wait—click ‘Enroll to a lesson now and start your journey to success!
     </h3>
