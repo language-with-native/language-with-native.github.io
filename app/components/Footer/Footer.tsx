@@ -14,9 +14,6 @@ interface socialLinks {
 }
 
 const socialLinks: socialLinks[] = [
-  
-
-    
         {
             imgSrc: '/assets/footer/whatsapp.svg',
             link: 'https://wa.me/+31616725940/?text=Thanks+for+registering!',
