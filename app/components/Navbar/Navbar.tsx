@@ -7,6 +7,7 @@ import Drawerdata from "./Drawerdata";
 import Signdialog from "./Signdialog";
 import Registerdialog from "./Registerdialog";
 import { redirect } from 'next/navigation';
+import Image from "next/image";
 
 interface NavigationItem {
     name: string;
@@ -39,6 +40,25 @@ const CustomLink = ({ href, onClick, children }: { href: string; onClick: () => 
     );
 };
 
+
+interface socialLinks {
+    imgSrc: string;
+    link: string;
+    width: number;
+}
+
+const socialLinks: socialLinks[] = [
+        {
+            imgSrc: '/assets/footer/whatsapp.svg',
+            link: 'https://wa.me/+31616725940/?text=Thanks+for+registering!',
+            width: 14
+        },
+        {
+            imgSrc: '/assets/footer/telegram.svg',
+            link: 'https://t.me/anna_speaklan',
+            width: 14
+        },
+]
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -93,6 +113,18 @@ const Navbar = () => {
                                             </span>
                                         </CustomLink>
                                     ))}
+                                    
+                                    {socialLinks.map((items, i) => (
+                                    <Link href={items.link} key={i}>
+                                        <div className="bg-white h-12 w-12 shadow-xl text-base rounded-full flex items-center justify-center footer-icons hover:bg-ultramarine">
+                                            <Image src={items.imgSrc} alt={items.imgSrc} width={items.width} height={2} className="sepiaa" />
+                                        </div>
+                                    </Link>
+                                    ))}
+
+                                </div>
+                                <div className="flex space-x-4">
+
                                 </div>
                             </div>
                         </div>
