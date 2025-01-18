@@ -79,12 +79,13 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center">
-                                <h1 className='text-midnightblue text-1xl sm:text-2xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0'>Language With Native</h1>
-                                {/* <img
-                                    className="block h-12 w-40 lg:hidden"
-                                    src={'/assets/logo/logo.svg'}
+                                {/* <h1 className='text-midnightblue text-1xl sm:text-2xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0'>Language With Native</h1> */}
+                                 <img
+                                    className="block h-20 w-20"
+                                    src={'/assets/logo/logo_spl.svg'}
                                     alt="dsign-logo"
                                 />
+                                {/*
                                 <img
                                     className="hidden h-full w-full lg:block"
                                     src={'/assets/logo/logo.svg'}
